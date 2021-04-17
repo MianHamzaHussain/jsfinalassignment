@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4 class="text-center text-success">lowercase</h4>
+          <h6 class="text-center text-danger" id="lcresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter a text"
+                id="li"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="lowercase "
+                onclick="lc()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Upper case</h4>
+          <h6 class="text-center text-danger" id="ucresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter a text"
+                id="ui"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Uppercase "
+                onclick="uc()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Toogle case</h4>
+          <h6 class="text-center text-danger" id="tcresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter a text"
+                id="ti"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Tooglecase "
+                onclick="tc()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">
+            count digits aphaphets or special character
+          </h4>
+          <h6 class="text-center text-danger" id="scresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter a text"
+                id="sc"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Count"
+                onclick="stringcount()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <h4 class="text-center text-success">count vowels and consonats</h4>
+          <h6 class="text-center text-danger" id="scresult2"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter a text"
+                id="sc2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Count"
+                onclick="stringcount2()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">count words</h4>
+          <h6 class="text-center text-danger" id="scresult3"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter a text"
+                id="sc3"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Count"
+                onclick="stringcount3()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Print Object Properties</h4>
+          <h6 class="text-center text-danger" id="pr"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Print"
+                onclick="prpropeties()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Delete Roll no property</h4>
+          <h6 class="text-center text-danger" id="dpr"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="btn btn-danger"
+                type="button"
+                value="Delete"
+                onclick="drpropeties()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--row-->
+      <div class="row">
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Print Object Length</h4>
+          <h6 class="text-center text-danger" id="pol"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Print"
+                onclick="prpol()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Print Reading Status</h4>
+          <h6 class="text-center text-danger" id="prs"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Print"
+                onclick="preading()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Volume of a cylinder</h4>
+          <h6 class="text-center text-danger" id="vor"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Height"
+                id="hi"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Radius"
+                id="ri"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Calculate"
+                onclick="volume()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">odd number between 1 to 100.</h4>
+          <h6 id="onu" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Print Odd "
+                onclick="podd()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--row-->
+      <div class="row">
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Sum natural numbers to n</h4>
+          <h6 id="nresult" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter Limit"
+                id="nl"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Sum "
+                onclick="Naturual()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Sum Even numbers to n</h4>
+          <h6 id="ner" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter Limit"
+                id="ne"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Sum"
+                onclick="Even()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Sum odd numbers to n</h4>
+          <h6 id="nor" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter Limit"
+                id="no"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Sum "
+                onclick="Odd()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Table</h4>
+          <h6 id="tor" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter number"
+                id="to"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Table "
+                onclick="table()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--row-->
+      <div class="row">
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Count Digits</h4>
+          <h6 id="cor" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter number"
+                id="cd"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Count "
+                onclick="countd()"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Find maximum no</h4>
+          <h6 class="text-center text-danger" id="maxresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number1"
+                id="v1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number2"
+                id="v2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Find Max"
+                onclick="maxi()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Find maximum no</h4>
+          <h6 class="text-center text-danger" id="maxresult2"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number1"
+                id="n1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number2"
+                id="n2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number3"
+                id="n3"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Find Max"
+                onclick="maxi2()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">check number + ,- or 0</h4>
+          <h6 class="text-center text-danger" id="chresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number"
+                id="nu1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Check"
+                onclick="chck()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--row-->
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Check Leap Year</h4>
+          <h6 class="text-center text-danger" id="leapresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter year"
+                id="year"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="leap()"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-3">
+          <h4 class="text-center text-success">divisible by 5 and 11</h4>
+          <h6 class="text-center text-danger" id="chresult2"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number"
+                id="no1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Check"
+                onclick="check()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Even or odd</h4>
+          <h6 class="text-center text-danger" id="eoresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number"
+                id="nu2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="eo()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">alphabet or not</h4>
+          <h6 class="text-center text-danger" id="aresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                maxlength="1"
+                placeholder="Enter a character"
+                id="c1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="ca()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <h4 class="text-center text-success">vowel or consonat</h4>
+          <h6 class="text-center text-danger" id="aresult2"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                maxlength="1"
+                placeholder="Enter a character"
+                id="c2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="ca2()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">letter digit or special</h4>
+          <h6 class="text-center text-danger" id="cdsresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                maxlength="1"
+                placeholder="Enter a character"
+                id="c3"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="cds()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Cube</h4>
+          <h6 class="text-center text-danger" id="cur"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number"
+                id="cui"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="cube()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">
+            diameter, circumference and area of circle
+          </h4>
+          <h6 class="text-center text-danger" id="dacr"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number"
+                id="daci"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="Dac()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">
+            Check prime, Armstrong or perfect number
+          </h4>
+          <h6 class="text-center text-danger" id="papr"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number"
+                id="papi"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="Cpap()"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-3">
+          <h4 class="text-center text-success">
+            Find maximum no using conditional operator
+          </h4>
+          <h6 class="text-center text-danger" id="cmaxresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number1"
+                id="cv1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number2"
+                id="cv2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Find Max"
+                onclick="cmaxi()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">
+            Find maximum no using conditional operator
+          </h4>
+          <h6 class="text-center text-danger" id="cmaxresult2"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number1"
+                id="cn1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number2"
+                id="cn2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number3"
+                id="cn3"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Find Max"
+                onclick="cmaxi2()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">
+            Check Leap Year using conditional operator
+          </h4>
+          <h6 class="text-center text-danger" id="cleapresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter year"
+                id="cyear"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="cleap()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">alphabet or not</h4>
+          <h6 class="text-center text-danger" id="caresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                maxlength="1"
+                placeholder="Enter a character"
+                id="cai"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="cea()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">week name using switch</h4>
+          <h6 class="text-center text-danger" id="wnr"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="Enter day no"
+                id="wni"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="print"
+                onclick="Weekname()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">no of days using switch</h4>
+          <h6 class="text-center text-danger" id="ndar"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="Enter  month no"
+                id="ndai"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="print"
+                onclick="noda()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">vowel or consonat</h4>
+          <h6 class="text-center text-danger" id="saresult2"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                maxlength="1"
+                placeholder="Enter a character"
+                id="cha"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="sca()"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Find maximum no using switch</h4>
+          <h6 class="text-center text-danger" id="smaxresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number1"
+                id="sv1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter number2"
+                id="sv2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Find Max"
+                onclick="smaxi()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">
+            even or odd using switch case.
+          </h4>
+          <h6 class="text-center text-danger" id="eor"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="Enter  no"
+                id="eoi"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="check"
+                onclick="sceo()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">
+            number is positive, negative or zero using switch case.
+          </h4>
+          <h6 class="text-center text-danger" id="pnzr"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Enter  no"
+                id="pnzi"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="check"
+                onclick="cpnz()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">
+            Finding root of quadaratic equation using switch
+          </h4>
+          <h6 class="text-center text-danger" id="rootr"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter a avlue"
+                id="rn1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter b value"
+                id="rn2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter c vlue"
+                id="rn3"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Find"
+                onclick="Roots()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">
+            Simple Calculator using switch case.
+          </h4>
+          <h6 class="text-center text-danger" id="calcur"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Enter a number"
+                id="num1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                maxlength="1"
+                placeholder="+,-,%,/,*"
+                id="op"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter  a number"
+                id="num2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Calculate"
+                onclick="Calculate()"
+              />
+            </div>
+          </form>
+        </div>
+      
+        <div class="col-md-4">
+          <h4 class="text-center text-success">count negative numbers</h4>
+          <h6 id="coneresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder=" Number of elements u want to add in array"
+                id="cone"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="add elements to find "
+                onclick="countne()"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- col-md-3-->
+        <div class="col-md-4">
+          <h4 class="text-center text-success">copy array 1 to array 2</h4>
+          <h6 id="aresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="array 1 elements u wan add"
+                id="a1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder=" Number of elements u want to add in array"
+                id="a2"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="add elements to copy "
+                onclick="copya()"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- col-md-3-->
+      </div>
+      <!--row 2-->
+      <div class="row">
+        <div class="col-md-12">
+          <h6 id="addresult" class="text-center text-danger"></h6>
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="text-center text-success">Add elements</h4>
+
+              <form>
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Enter value"
+                    id="addele"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="button"
+                    class="btn btn-primary"
+                    value="add element "
+                    onclick="adde()"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <h4 class="text-center text-success">Remove elements</h4>
+
+              <form>
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="number"
+                    min="0"
+                    placeholder="Enter Index to remove"
+                    id="eindex"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="button"
+                    class="btn btn-danger"
+                    value="delete "
+                    onclick="reme()"
+                  />
+                </div>
+              </form>
+            </div>
+      
+    </div>
+    <!--row-->
+    <div class="row">
+       <div class="col-md-3">
+          <h4 class="text-center text-success">count Frequency of each element</h4>
+          <h6 id="cferesult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder=" Number of elements"
+                id="cfe"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="add elements to count"
+                onclick="countfe()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Unique elements</h4>
+          <h6 id="uniqueresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder=" Number of elements"
+                id="uniquei"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Print"
+                onclick="unique()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Count duplicate elements</h4>
+          <h6 id="dueresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder=" Number of elements"
+                id="dui"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="add elements to count"
+                onclick="dupli()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Remove duplicate elements</h4>
+          <h6 id="rdueresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder=" Number of elements"
+                id="rdui"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Remove"
+                onclick="rdupli()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success"> merge two array to third array</h4>
+          <h6 id="maresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="array 1 elements u wan add"
+                id="ma1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder=" Number of elements arr2"
+                id="ma2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder=" Number of elements array3"
+                id="ma3"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Merge "
+                onclick="merge()"
+              />
+            </div>
+          </form>
+        </div>
+    </div>
+    </div>
+    <!-- container-->
+  </body>
+  <script src="./index.js"></script>
+</html>
